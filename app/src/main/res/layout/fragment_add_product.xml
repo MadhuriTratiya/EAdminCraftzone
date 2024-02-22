@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AddProductFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <ScrollView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productnmedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/product_name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#8D6E63" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productdescriptionedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/product_description"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#8D6E63" />
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productmrpedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/product_mrp"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="#8D6E63"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/productspedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/product_sp"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+
+            <Spinner
+                android:id="@+id/productcategorydropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:minHeight="48dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/selectcoverimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/select_cover_image"
+                android:textAllCaps="false"
+                tools:ignore="VisualLintButtonSize" />
+            
+            <ImageView
+                android:id="@+id/productimageview"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+<!--            android:visibility="gone"-->
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/productimagebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/select_product_image"
+                android:textAllCaps="false" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productimgrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/add_product"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/image_item" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submitproductbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:minHeight="48dp"
+                android:text="Add Product"
+                android:textAllCaps="false"
+                tools:ignore="VisualLintButtonSize" />
+    </LinearLayout>
+<!--</ScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

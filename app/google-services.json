@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "248286352824",
+    "project_id": "eusercraftzone",
+    "storage_bucket": "eusercraftzone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248286352824:android:672a1549c57def1877ab4d",
+        "android_client_info": {
+          "package_name": "com.example.eadmincraftzone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc40mFtmwW6O3_BEAdHBs9PDjHQDCUBJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248286352824:android:cf59a09927d914f377ab4d",
+        "android_client_info": {
+          "package_name": "com.example.eusercraftzone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc40mFtmwW6O3_BEAdHBs9PDjHQDCUBJw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
